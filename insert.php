@@ -1,9 +1,9 @@
 <?php
 require_once 'db.php';
 
-$fname = 'John';
-$lname = 'Doe';
-$age = 30.25;
+$fname = 'Youssef';
+$lname = 'Sawan';
+$age = 21;
 
 $query = $con->prepare("INSERT INTO users (fname, lname, age) VALUES (?, ?, ?)");
 $query->bind_param("ssd", $fname, $lname, $age);
