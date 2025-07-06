@@ -1,8 +1,8 @@
 <?php
 require_once 'db.php';
 
-$id = 4;
-$age = 45.00;
+$id = 2;
+$age = 20;
 
 $query = $con->prepare("UPDATE users SET age = ? WHERE id = ?");
 $query->bind_param("di", $age, $id);
